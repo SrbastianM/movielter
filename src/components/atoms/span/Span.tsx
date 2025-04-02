@@ -6,7 +6,7 @@ export interface SpanProps {
 }
 
 const Span : React.FC<SpanProps>= ({className = "", text}) => {
-  return (<span className={`text-sm text-gray-700 ${className}`}>${text}</span>)
+  return (<span className={`text-sm text-gray-700 ${className}`}>{text}</span>)
 }
 
 

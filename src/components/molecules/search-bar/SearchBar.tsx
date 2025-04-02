@@ -4,7 +4,7 @@ import Input from "../../atoms/input/Input";
 const SearchBar = () => {
   return  (
     <div className="flex flex-col gap-2">
-      <Label text="What movie do you want?" htmlTo="search"/>
+      <Label className="text-xl" text="What movie do you want?" htmlTo="search"/>
       <Input onChange={(e) => {}}/>
     </div>
   );  

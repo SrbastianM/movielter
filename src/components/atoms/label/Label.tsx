@@ -11,7 +11,7 @@ const Label : React.FC<LabelProps> = ({text, htmlTo, className = ""}) => {
   return (
     <label 
     htmlFor={htmlTo}
-    className={`text-sm font-medium text-gray-700 ${className}`}
+    className={`text-sm font-medium text-gray-700 dark:text-amber-50 ${className}`}
         >
           {text}
     </label>
