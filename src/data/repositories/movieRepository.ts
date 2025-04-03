@@ -1,7 +1,5 @@
 import api from "../api/api";
 
-const API_KEY = import.meta.env.VITE_API_KEY
-
 export const searchMovies = async (query: string) => {
   if (!query || query.trim() === '') {
     throw new Error('Search cannot be empty');
@@ -10,7 +8,6 @@ export const searchMovies = async (query: string) => {
   try {
     const res = await api.get("", {
       params: {
-        apikey: API_KEY,
         s: query.trim(),
       },
     });
