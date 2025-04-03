@@ -11,7 +11,7 @@ export interface CardProps {
 
 const Card : React.FC<CardProps> = ({title, description, imageSrc}) => {
   return (
-    <div className="max-w-sm bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 p-4">
+    <div className="max-w-sm bg-white rounded-xl shadow-lg overflow-hidden border mt-8 border-gray-200 p-4">
       <Image src={imageSrc} alt={title} rounded className="w-full h-40"/>
       <div className="mt-4">
         <Label text={title} className="text-xl size-2 font-bold text-gray-900 dark:text-black"/>        
