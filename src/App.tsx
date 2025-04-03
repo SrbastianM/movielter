@@ -1,10 +1,10 @@
 import './App.css'
-import SearchBar from './components/molecules/search-bar/SearchBar'
+import MovieList from './components/MovieList'
 
 function App() {
   return (
     <>
-      <SearchBar /> 
+      <MovieList />    
     </>
   )
 }

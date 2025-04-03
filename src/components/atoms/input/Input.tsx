@@ -2,7 +2,7 @@ import React from "react";
 
 export interface InputProps{
   value?: string,
-  onChange: (value: string) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   className?: string;
 }
@@ -11,7 +11,7 @@ export interface InputProps{
 const Input: React.FC<InputProps> = ({value, onChange, placeholder = "Search", className = ""}) => {
   return (
     <>
-      <input type="text" value={value} onChange={(e) => onChange(e.target.value)} placeholder={placeholder} className={`p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}/>
+      <input type="text" value={value} onChange={onChange} placeholder={placeholder} className={`p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}/>
     </>
   )
 }
