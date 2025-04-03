@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchMoviesUseCase } from "../../domain/usecases/getMovies";
-
-interface Movie {
-  imdbID: string;
-  Title: string;
-  Year: string;
-  Poster: string;
-}
+import { Movie } from "../../domain/models/Movie";
 
 interface UseFetchSearchMovieProps {
   initialSearch?: string;
